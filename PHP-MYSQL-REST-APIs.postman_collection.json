@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "fe293887-5a00-4171-b9c0-719d157ce09f",
+		"name": "PHP-MYSQL-REST-APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "emp_name",
+							"value": "Tester New 2",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "1988-05-10 03:03:14",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{host}}/php-mysql-rest-apis/createEmployee.php",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"php-mysql-rest-apis",
+						"createEmployee.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readEmployee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://{{host}}/php-mysql-rest-apis/readEmployee.php",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"php-mysql-rest-apis",
+						"readEmployee.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "emp_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "emp_name",
+							"value": "Tester New 11",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "2020-05-10 03:03:14",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{host}}/php-mysql-rest-apis/updateEmployee.php",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"php-mysql-rest-apis",
+						"updateEmployee.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "emp_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{host}}/php-mysql-rest-apis/deleteEmployee.php",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"php-mysql-rest-apis",
+						"deleteEmployee.php"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
